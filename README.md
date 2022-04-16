@@ -211,6 +211,14 @@ app.get('/form', csrfProtection, function (req, res) {
 
 This is not required for application that doesn't handle any form data.
 
+### Validate Incoming Requests
+
+You should consider validating the incoming requests to your application to check if they contain any malicious data. There are many ways to do this but the most popular way to do that is using a schema validation library like Joi or class-validator.
+
+You can refer to the following article for more information.
+
+https://www.mohammadfaisal.dev/blog/request-validation-nodejs-express
+
 ### Compression
 
 Compression is a technique that can reduce the size of the static file and json response
