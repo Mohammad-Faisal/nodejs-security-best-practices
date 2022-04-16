@@ -219,6 +219,18 @@ You can refer to the following article for more information.
 
 https://www.mohammadfaisal.dev/blog/request-validation-nodejs-express
 
+### Hide errors from end users
+
+You should not expose errors to your users. In order to do that you will need to handle production environment error handling seriously. Following is a good guide where you can start.
+
+https://www.mohammadfaisal.dev/blog/error-handling-nodejs-express
+
+### Load secrets securely
+
+Be extra careful about loading secrets into your application. You must not include secrets as plain strings into the application. Using some kind of environment file is necessary to achieve this. You can refer to the following example for that.
+
+https://www.mohammadfaisal.dev/blog/nodejs-environment-handling
+
 ### Compression
 
 Compression is a technique that can reduce the size of the static file and json response
