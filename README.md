@@ -4,26 +4,6 @@ Today we will see how we can improve the security of a NodeJS application. There
 
 Nothing is bulletproof but being safe doesn't hurt
 
-### Compression
-
-Compression is a technique that can reduce the size of the static file and json response
-In nodejs that can be done with a nice middleware package named [**compression**](https://www.npmjs.com/package/compression)
-
-First install it
-
-```sh
-yarn add compression
-```
-
-Then add it inside your **index.ts**
-
-```js
-import compression from 'compression';
-app.use(compression());
-```
-
-And that's it! There are other options that you can use. Refer to the documentation for that
-
 ### The most popular one!
 
 We will first use a nice npm package named [helmet](https://www.npmjs.com/package/helmet).
@@ -231,6 +211,26 @@ app.get('/form', csrfProtection, function (req, res) {
 
 This is not required for application that doesn't handle any form data.
 
+### Compression
+
+Compression is a technique that can reduce the size of the static file and json response
+In nodejs that can be done with a nice middleware package named [**compression**](https://www.npmjs.com/package/compression)
+
+First install it
+
+```sh
+yarn add compression
+```
+
+Then add it inside your **index.ts**
+
+```js
+import compression from 'compression';
+app.use(compression());
+```
+
+And that's it! There are other options that you can use. Refer to the documentation for that.
+
 #### Some more resource:
 
 https://cheatsheetseries.owasp.org/cheatsheets/Nodejs_Security_Cheat_Sheet.html
@@ -238,4 +238,4 @@ https://medium.com/@nodepractices/were-under-attack-23-node-js-security-best-pra
 
 ### Github Repo
 
-https://github.com/Mohammad-Faisal/nodejs-environment-handling
+https://github.com/Mohammad-Faisal/nodejs-security-best-practices
